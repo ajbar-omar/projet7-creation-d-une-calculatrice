@@ -10,6 +10,8 @@ input{
     background-color: #eaedef;
     text-align: right;
     font-size: 30px;
+    caret-color: transparent;
+    outline: none;
 }
 #calculator{
 	width: 320px;
