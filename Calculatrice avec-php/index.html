@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <title>Calculatrice avec JS</title>
+</head>
+
+    <body>
+        <div id="container">
+            <div id="calculator">
+                <div id="result">
+                    <input type="text"  id="afficheur">
+                </div>
+                <div id="keyboard">
+                    <button class="operator" id="clear" onclick="Init()">C</button>
+                    <button class="operator" id="backspace">CE</button>
+                    <button class="operator" id="%">%</button>
+					<button class="operator" id="/" onclick="operation('/')">/</button>
+					<button class="number" id="7" onclick="ClickNumber(7)">7</button>
+					<button class="number" id="8" onclick="ClickNumber(8)">8</button>
+					<button class="number" id="9" onclick="ClickNumber(9)">9</button>
+					<button class="operator" id="*" onclick="operation('*')">&times;</button>
+					<button class="number" id="4" onclick="ClickNumber(4)">4</button>
+					<button class="number" id="5" onclick="ClickNumber(5)">5</button>
+					<button class="number" id="6" onclick="ClickNumber(6)">6</button>
+					<button class="operator" id="-" onclick="operation('-')">-</button>
+					<button class="number" id="1" onclick="ClickNumber(1)">1</button>
+					<button class="number" id="2" onclick="ClickNumber(2)">2</button>
+					<button class="number" id="3" onclick="ClickNumber(3)">3</button>
+					<button class="operator" id="+" onclick="operation('+')">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number" id="0" onclick="ClickNumber(0)">0</button>
+					<button class="empty" id="empty"></button>
+                    <button class="operator" id="="  onclick="Egale()">=</button>
+                </div>
+            </div>
+        </div>
+       
+        <script src="CalculatriceBLO.js"></script>
+    <script src="calculatrice.js"></script>
+    </body>
+</html>
